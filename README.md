@@ -18,7 +18,7 @@ The first step in building the game is to clone or download the repository. If y
 If you don't have git installed or don't want it, you can download the repository as a .zip file from the green download button at the very above.
 
 2. Download necessary dependencies and packages
-Because of Electron, the game uses the npm package manager. If you don't have it on your computer, you need it. You can get it from here. Before you build and start the game, you need to download and install the necessary packages and dependencies with:
+Because of Electron, the game uses the npm package manager. If you don't have it on your computer, you need it. You can get it from [here](https://www.npmjs.com/get-npm). Before you build and start the game, you need to download and install the necessary packages and dependencies with:
 
 `npm install`
 
