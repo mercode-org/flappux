@@ -1,8 +1,12 @@
 var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, "gameDiv");
 
-window.addEventListener('resize', function () {
-        "use strict";
-        window.location.reload();
+var resizeTimeout;
+window.addEventListener('resize', function(event) {
+      clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function(){
+            window.location.reload();
+
+    }, 50);
 
 });
 
