@@ -2,10 +2,10 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-A clone of the original Flappy bird game. Written in HTML and JS, powered by Electron.
+A different concept of the original Flappy bird game. Written in HTML and JS, powered by Electron.
 
 ## The goal
-The goal is to reproduce the exact clone of the original Flappy bird game for you to play on your computer when you're bored. Because of the goal, all sound effects, images, behavior and animations are so important.
+The goal is to reproduce a different square-based concept of the original Flappy bird game for you to play on your computer when you're bored.
 
 ## Building
 The main aim is to have a desktop app for macOS, Windows and Linux for easier gameplay and access. Though, if you want to play the game from your browser, it's possible to do so. Below you can find the two main methods to build and play the game.
