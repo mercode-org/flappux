@@ -1,5 +1,11 @@
 var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, "gameDiv");
 
+window.addEventListener('resize', function () {
+        "use strict";
+        window.location.reload();
+
+});
+
 var mainState = {
 
     preload: function () {
@@ -114,4 +120,4 @@ var mainState = {
 };
 
 game.state.add('main', mainState);
-game.state.start('main'); 
+game.state.start('main');

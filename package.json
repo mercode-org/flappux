@@ -19,5 +19,12 @@
   "homepage": "https://github.com/ardacebi/flappy-bird#readme",
   "devDependencies": {
     "electron": "^8.2.1"
+  },
+  "launcher": {
+    "title": "Free Flappy",
+    "icon": "",
+    "main": "./index.html",
+    "width": 565,
+    "height": 545
   }
 }
