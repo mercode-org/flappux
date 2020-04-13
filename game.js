@@ -14,7 +14,7 @@ var mainState = {
         game.stage.backgroundColor = '#71c5cf';
 
         game.load.image('bird', 'assets/bird.png');
-        game.load.image('pipe', 'assets/pipe.png');
+        game.load.image('column', 'assets/column.png');
 
         // Load the jump sound
         game.load.audio('jump', 'assets/jump.wav');
@@ -23,7 +23,7 @@ var mainState = {
     create: function () {
         game.physics.startSystem(Phaser.Physics.ARCADE);
 
-        this.pipes = game.add.group();
+        this.columns = game.add.group();
         this.timer = game.time.events.loop(1500, this.addRowOfPipes, this);
 
         this.bird = game.add.sprite(100, 245, 'bird');
@@ -49,7 +49,7 @@ var mainState = {
         if (this.bird.y < 0 || this.bird.y > game.world.height)
             this.restartGame();
 
-        game.physics.arcade.overlap(this.bird, this.pipes, this.hitPipe, null, this);
+        game.physics.arcade.overlap(this.bird, this.columns, this.hitPipe, null, this);
 
         // Slowly rotate the bird downward, up to a certain point.
         if (this.bird.angle < 20)
@@ -71,18 +71,18 @@ var mainState = {
     },
 
     hitPipe: function () {
-        // If the bird has already hit a pipe, we have nothing to do
+        // If the bird has already hit a column, we have nothing to do
         if (this.bird.alive == false)
             return;
 
         // Set the alive property of the bird to false
         this.bird.alive = false;
 
-        // Prevent new pipes from appearing
+        // Prevent new columns from appearing
         game.time.events.remove(this.timer);
 
-        // Go through all the pipes, and stop their movement
-        this.pipes.forEach(function (p) {
+        // Go through all the columns, and stop their movement
+        this.columns.forEach(function (p) {
             p.body.velocity.x = 0;
         }, this);
     },
@@ -92,13 +92,13 @@ var mainState = {
     },
 
     addOnePipe: function (x, y) {
-        var pipe = game.add.sprite(x, y, 'pipe');
-        this.pipes.add(pipe);
-        game.physics.arcade.enable(pipe);
+        var column = game.add.sprite(x, y, 'column');
+        this.columns.add(column);
+        game.physics.arcade.enable(column);
 
-        pipe.body.velocity.x = -200;
-        pipe.checkWorldBounds = true;
-        pipe.outOfBoundsKill = true;
+        column.body.velocity.x = -200;
+        column.checkWorldBounds = true;
+        column.outOfBoundsKill = true;
     },
 
     addRowOfPipes: function () {
