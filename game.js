@@ -1,4 +1,4 @@
-var game = new Phaser.Game(400, 490, Phaser.AUTO, "gameDiv");
+var game = new Phaser.Game(screen.width, screen.height, Phaser.AUTO, "gameDiv");
 
 var mainState = {
 
