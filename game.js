@@ -1,4 +1,4 @@
-var game = new Phaser.Game(screen.width, screen.height, Phaser.AUTO, "gameDiv");
+var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, "gameDiv");
 
 var mainState = {
 
@@ -106,7 +106,7 @@ var mainState = {
 
         for (var i = 0; i < 8; i++)
             if (i != hole && i != hole + 1)
-                this.addOnePipe(400, i * 60 + 10);
+                this.addOnePipe(window.innerWidth, i * 60 + 10);
 
         this.score += 1;
         this.labelScore.text = this.score;
