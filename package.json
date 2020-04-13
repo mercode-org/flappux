@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "nixstart": "nix run nixpkgs.electron_6 -c electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
