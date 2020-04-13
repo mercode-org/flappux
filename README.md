@@ -35,6 +35,7 @@ The second method is to run the game in your browser, without installing a separ
 
 1. Clone/download the repository
 If you already have git installed on your computer, you can clone the repository with:
+
 `git clone https://github.com/ardacebi/flappy-bird`
 
 If you don't have git installed or don't want it, you can download the repository as a .zip file from the green download button at the very above.
