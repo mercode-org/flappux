@@ -45,7 +45,7 @@ After cloning or download the repository, navigate to the downloaded folder and 
 ## Contributing
 All contributions are welcome. To-do's and known bugs are logged as issues in this repository. You can contribute with your changes by creating a fork of the repository and opening a pull request.
 
-## Contributors ✨
+## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -61,5 +61,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
