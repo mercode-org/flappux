@@ -1,5 +1,15 @@
 var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, "gameDiv");
 
+var newStyle = document.createElement('style');
+newStyle.appendChild(document.createTextNode("\
+@font-face {\
+    font-family: 'ScoreFont';\
+    src: url('./fonts/ScoreFont.ttf') format('truetype');\
+  }\
+"));
+
+document.head.appendChild(newStyle);
+
 var resizeTimeout;
 window.addEventListener('resize', function(event) {
       clearTimeout(resizeTimeout);
@@ -48,7 +58,7 @@ var mainState = {
         game.input.onDown.add(this.jump, this);
 
         this.score = 0;
-        this.labelScore = game.add.text(20, 20, "0", { font: "30px Arial", fill: "#ffffff" });
+        this.labelScore = game.add.text(20, 20, "0", { font: "45px ScoreFont", fill: "#ffffff" });
 
         // Add the jump sound
         this.jumpSound = game.add.audio('jump');
