@@ -4,6 +4,8 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 Challenge the two sides playing Flappy Bird! Written in HTML and JS, powered by Electron.
 
+<img src="screenshot.png"></img>
+
 ## The goal
 The goal is to reproduce a different concept of the original Flappy bird game which challenges the two sides: Linux and "Others".
 
