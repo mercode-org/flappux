@@ -114,9 +114,9 @@ var mainState = {
     addRowOfPipes: function () {
         var hole = Math.floor(Math.random() * 5) + 1;
 
-        for (var i = 0; i < 8; i++)
+        for (var i = 0; i < window.innerHeight; i++)
             if (i != hole && i != hole + 1)
-                this.addOnePipe(window.innerWidth, i * 60 + 10);
+                this.addOnePipe(window.innerWidth, i * 60 );
 
         this.score += 1;
         this.labelScore.text = this.score;
