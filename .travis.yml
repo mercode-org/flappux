@@ -3,6 +3,9 @@ sudo: false
 language: node_js
 node_js: "9.11.1"
 
+install:
+  - npm install electron -g
+
 cache:
   directories:
     - node_modules
