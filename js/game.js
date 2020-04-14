@@ -85,8 +85,16 @@ var mainState = {
     },
 
     update: function () {
-        if (this.bird.y < 0 || this.bird.y > game.world.height)
+        if (this.bird.y < 0 || this.bird.y > game.world.height) {
+
+            this.deadSound = game.add.audio('dead');
+            this.deadSound.volume = 0.2;
+
+            this.deadSound.play();
+
             this.restartGame();
+        }
+
 
         game.physics.arcade.overlap(this.bird, this.columns, this.hitPipe, null, this);
 
