@@ -1,23 +1,23 @@
 {
-  "name": "flappy-bird",
+  "name": "Flappux",
   "version": "1.0.0",
-  "description": "A clone of the original Flappy bird game.",
+  "description": "Challenge the two sides.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "nixstart": "nix run nixpkgs.electron_6 -c electron .",
-    "test": "npm start && return 0"
+    "test": "return 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ardacebi/flappy-bird.git"
+    "url": "git+https://github.com/ardacebi/flappux.git"
   },
   "author": "Arda Çebi",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/ardacebi/flappy-bird/issues"
+    "url": "https://github.com/ardacebi/flappux/issues"
   },
-  "homepage": "https://github.com/ardacebi/flappy-bird#readme",
+  "homepage": "https://github.com/ardacebi/flappux#readme",
   "devDependencies": {
     "electron": "^8.2.1"
   },

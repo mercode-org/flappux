@@ -1,11 +1,11 @@
-# Flappy Bird
+# Flappux
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-A different concept of the original Flappy bird game. Written in HTML and JS, powered by Electron.
+Challenge the two sides playing Flappy Bird! Written in HTML and JS, powered by Electron.
 
 ## The goal
-The goal is to reproduce a different square-based concept of the original Flappy bird game for you to play on your computer when you're bored.
+The goal is to reproduce a different concept of the original Flappy bird game which challenges the two sides: Linux and "Others".
 
 ## Building
 The main aim is to have a desktop app for macOS, Windows and Linux for easier gameplay and access. Though, if you want to play the game from your browser, it's possible to do so. Below you can find the two main methods to build and play the game.
@@ -16,7 +16,7 @@ The desktop apps (macOS, Windows, Linux) are powered by Electron. Electron rende
 1. Clone/download the repository
 The first step in building the game is to clone or download the repository. If you already have git installed on your computer, you can clone the repository with:
 
-`git clone https://github.com/ardacebi/flappy-bird`
+`git clone https://github.com/ardacebi/flappux`
 
 If you don't have git installed or don't want it, you can download the repository as a .zip file from the green download button at the very above.
 
@@ -36,7 +36,7 @@ The second method is to run the game in your browser, without installing a separ
 1. Clone/download the repository
 If you already have git installed on your computer, you can clone the repository with:
 
-`git clone https://github.com/ardacebi/flappy-bird`
+`git clone https://github.com/ardacebi/flappux`
 
 If you don't have git installed or don't want it, you can download the repository as a .zip file from the green download button at the very above.
 
@@ -55,8 +55,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://www.ardacebi.com"><img src="https://avatars3.githubusercontent.com/u/17576065?v=4" width="100px;" alt=""/><br /><sub><b>Arda Çebi</b></sub></a><br /><a href="https://github.com/ardacebi/flappy-bird/commits?author=ardacebi" title="Code">💻</a> <a href="https://github.com/ardacebi/flappy-bird/commits?author=ardacebi" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://mercode.org"><img src="https://avatars1.githubusercontent.com/u/40173707?v=4" width="100px;" alt=""/><br /><sub><b>Tan Siret G. AKINCI</b></sub></a><br /><a href="https://github.com/ardacebi/flappy-bird/commits?author=Yutyo" title="Code">💻</a> <a href="#design-Yutyo" title="Design">🎨</a></td>
+    <td align="center"><a href="https://www.ardacebi.com"><img src="https://avatars3.githubusercontent.com/u/17576065?v=4" width="100px;" alt=""/><br /><sub><b>Arda Çebi</b></sub></a><br /><a href="https://github.com/ardacebi/flappux/commits?author=ardacebi" title="Code">💻</a> <a href="https://github.com/ardacebi/flappux/commits?author=ardacebi" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://mercode.org"><img src="https://avatars1.githubusercontent.com/u/40173707?v=4" width="100px;" alt=""/><br /><sub><b>Tan Siret G. AKINCI</b></sub></a><br /><a href="https://github.com/ardacebi/flappux/commits?author=Yutyo" title="Code">💻</a> <a href="#design-Yutyo" title="Design">🎨</a></td>
   </tr>
 </table>
 
