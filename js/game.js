@@ -11,10 +11,10 @@ newStyle.appendChild(document.createTextNode("\
 document.head.appendChild(newStyle);
 
 var resizeTimeout;
-window.addEventListener('resize', function(event) {
-      clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(function(){
-            window.location.reload();
+window.addEventListener('resize', function (event) {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function () {
+        window.location.reload();
 
     }, 50);
 
@@ -33,8 +33,15 @@ var mainState = {
 
         game.stage.backgroundColor = '#71c5cf';
 
-        game.load.image('bird', 'assets/tuxbird.png');
-        game.load.image('column', 'assets/wincolumn.png');
+        // Load Characters
+        game.load.image('beastie', 'assets/characters/beastie.png');
+        game.load.image('freedo', 'assets/characters/freedo.png');
+        game.load.image('tux', 'assets/characters/tux.png');
+
+        // Load Columns
+        game.load.image('apple', 'assets/columns/apple.png');
+        game.load.image('drm', 'assets/columns/drm.png');
+        game.load.image('win', 'assets/columns/win.png');
 
         // Load the jump sound
         game.load.audio('jump', 'assets/audio/jump.wav');
@@ -58,7 +65,7 @@ var mainState = {
         this.columns = game.add.group();
         this.timer = game.time.events.loop(1500, this.addRowOfPipes, this);
 
-        this.bird = game.add.sprite(100, 245, 'bird');
+        this.bird = game.add.sprite(100, 245, 'tux'); // IMPORTANT: THIS CHANGES THE BIRD SHAPE
         game.physics.arcade.enable(this.bird);
         this.bird.body.gravity.y = 1000;
 
@@ -134,7 +141,7 @@ var mainState = {
     },
 
     addOnePipe: function (x, y) {
-        var column = game.add.sprite(x, y, 'column');
+        var column = game.add.sprite(x, y, 'apple'); // IMPORTANT: THIS CHANGES THE COLUMN SHAPE
         this.columns.add(column);
         game.physics.arcade.enable(column);
 
@@ -148,7 +155,7 @@ var mainState = {
 
         for (var i = 0; i < window.innerHeight; i++)
             if (i != hole && i != hole + 1)
-                this.addOnePipe(window.innerWidth, i * 60 );
+                this.addOnePipe(window.innerWidth, i * 60);
 
         this.score += 1;
         this.labelScore.text = this.score;
