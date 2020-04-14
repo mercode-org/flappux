@@ -5,11 +5,9 @@ function createWindow() {
   let win = new BrowserWindow({
     width: 800,
     height: 600,
-    frame: false,
     webPreferences: {
       nodeIntegration: true
     },
-    titleBarStyle: 'hiddenInset',
   })
 
   // and load the index.html of the app.
