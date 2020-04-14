@@ -22,10 +22,10 @@
     "electron": "^8.2.1"
   },
   "launcher": {
-    "title": "Free Flappy",
+    "title": "Flappux",
     "icon": "",
     "main": "./index.html",
-    "width": 565,
-    "height": 545
+    "width": 800,
+    "height": 600
   }
 }
