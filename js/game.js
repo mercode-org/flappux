@@ -37,7 +37,19 @@ var mainState = {
         game.load.image('column', 'assets/wincolumn.png');
 
         // Load the jump sound
-        game.load.audio('jump', 'assets/jump.wav');
+        game.load.audio('jump', 'assets/audio/jump.wav');
+
+        // Load the warp sound
+        game.load.audio('warp', 'assets/audio/warp.wav');
+
+        // Load the death sound
+        game.load.audio('dead', 'assets/audio/dead.wav');
+
+        // Add the warp sound
+        this.warpSound = game.add.audio('warp');
+        this.warpSound.volume = 0.2;
+
+        this.warpSound.play();
     },
 
     create: function () {
@@ -81,6 +93,8 @@ var mainState = {
         if (this.bird.alive == false)
             return;
 
+
+
         this.bird.body.velocity.y = -350;
 
         // Jump animation
@@ -88,6 +102,8 @@ var mainState = {
 
         // Play sound
         this.jumpSound.play();
+
+
     },
 
     hitPipe: function () {
@@ -105,6 +121,12 @@ var mainState = {
         this.columns.forEach(function (p) {
             p.body.velocity.x = 0;
         }, this);
+
+        // Add the death sound
+        this.deadSound = game.add.audio('dead');
+        this.deadSound.volume = 0.2;
+
+        this.deadSound.play();
     },
 
     restartGame: function () {
