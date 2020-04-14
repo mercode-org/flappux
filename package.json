@@ -13,6 +13,10 @@
     "url": "git+https://github.com/ardacebi/flappux.git"
   },
   "author": "Arda Çebi",
+  "contributors": [
+    "Arda Çebi <ardacebi1@gmail.com> (https://www.ardacebi.com)",
+    "Tan Siret Akıncı <tansiretakinci@yandex.com> (https://github.com/yutyo)"
+  ],
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/ardacebi/flappux/issues"
