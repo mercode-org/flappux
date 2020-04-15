@@ -37,11 +37,15 @@ var mainState = {
         game.load.image('beastie', 'assets/characters/beastie.png');
         game.load.image('freedo', 'assets/characters/freedo.png');
         game.load.image('tux', 'assets/characters/tux.png');
+        game.load.image('gnu', 'assets/characters/gnu.png');
+	game.load.image('pidgin', 'assets/characters/pidgin.png');
 
         // Load Columns
         game.load.image('apple', 'assets/columns/apple.png');
         game.load.image('drm', 'assets/columns/drm.png');
         game.load.image('win', 'assets/columns/win.png');
+        game.load.image('fb', 'assets/columns/fb.png');
+	game.load.image('aws', 'assets/columns/aws.png');
 
         // Load the jump sound
         game.load.audio('jump', 'assets/audio/jump.wav');
@@ -65,7 +69,7 @@ var mainState = {
         this.columns = game.add.group();
         this.timer = game.time.events.loop(1500, this.addRowOfPipes, this);
 
-        this.bird = game.add.sprite(100, 245, 'tux'); // IMPORTANT: THIS CHANGES THE BIRD SHAPE
+        this.bird = game.add.sprite(100, 245, 'gnu'); // IMPORTANT: THIS CHANGES THE BIRD SHAPE
         game.physics.arcade.enable(this.bird);
         this.bird.body.gravity.y = 1000;
 
@@ -148,7 +152,7 @@ var mainState = {
     },
 
     addOnePipe: function (x, y) {
-        var column = game.add.sprite(x, y, 'apple'); // IMPORTANT: THIS CHANGES THE COLUMN SHAPE
+        var column = game.add.sprite(x, y, 'aws'); // IMPORTANT: THIS CHANGES THE COLUMN SHAPE
         this.columns.add(column);
         game.physics.arcade.enable(column);
 
