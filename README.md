@@ -7,13 +7,34 @@ Challenge the two sides playing Flappy Bird! Written in HTML and JS, powered by 
 <img src="screenshot.png"></img>
 
 ## The goal
-The goal is to reproduce a different concept of the original Flappy bird game which challenges the two sides: Linux and "Others".
+The goal is to reproduce a different concept of the original Flappy bird game which challenges two team: "Free" and "Proprietary".
+
+### Available characters and columns
+The game allows you to change your character and the columns (the blocks that kills you when you hit them).
+
+| Team Free | Team Proprietary |
+| --------------- | --------------- |
+| Beastie | Apple |
+| Freedo | DRM |
+| Tux | Nolok |
+| GNU | Win |
+| Pidgin | AWS |
+| Hexley | Nolok |
+| Blinky | MS |
+| Puffy | Clippy |
+| Xue | Java |
+| Buggie | Bug |
+| Duke | Java |
+|  | Chromy |
+|  | Phone |
+|  | MS |
+|  | Prime |
 
 ## Building
 The main aim is to have a desktop app for macOS, Windows and Linux for easier gameplay and access. Though, if you want to play the game from your browser, it's possible to do so. Below you can find the two main methods to build and play the game.
 
 ### 1. As a desktop app
-The desktop apps (macOS, Windows, Linux) are powered by Electron. Electron renders the already existing HTML and JavaScript code to a reponsive and ready desktop app.
+The desktop apps (macOS, Windows, Linux) are powered by Electron while [webkit2-launcher](https://github.com/mercode-org/webkit2-launcher) is an alternative that works faster. Both Electron and webkit2-launcher render the already existing HTML and JavaScript code to a reponsive and ready desktop app.
 
 #### 1. Clone/download the repository
 The first step in building the game is to clone or download the repository. If you already have git installed on your computer, you can clone the repository with:
@@ -24,18 +45,49 @@ git clone https://github.com/ardacebi/flappux
 
 If you don't have git installed or don't want it, you can download the repository as a .zip file from the green download button at the very above.
 
-#### 2. Download necessary dependencies and packages
+#### Electron
+
+##### 1. Download necessary dependencies and packages
+
 Because of Electron, the game uses the npm package manager. If you don't have it on your computer, you need it. You can get it from [here](https://www.npmjs.com/get-npm). Before you build and start the game, you need to download and install the necessary packages and dependencies with:
 
 ```
 npm install
 ```
 
-#### 3. Build
+##### 2. Build
 After the steps above, you're ready to build and play the game. Just build and start the game with:
 
 ```
 npm start
+```
+
+
+#### webkit2-launcher ( GNU/Linux only )
+
+##### 1. Install Nix
+
+Install Nix package manager in order to proceed. If you have NixOS or a Nix based GNU/Linux distro, you can skip that.
+```
+curl https://nixos.org/nix/install | sh
+```
+
+##### 2. Add MerOS channels and update.
+
+Add MerOS channels amond Nix channels and update. You can skip that if you use MerOS.
+```
+echo "https://nix.mercode.org/dev/meros meros" >> $HOME/.nix-channels
+nix-channel --update -vv
+```
+
+##### 3. Install [webkit2-installer](https://github.com/mercode-org/webkit2-launcher).
+```
+nix-env -iA meros.webkit2-launcher
+```
+
+##### 5. Start the app. 
+```
+webkit2-launcher .
 ```
 
 ### 2. As a web app/site
