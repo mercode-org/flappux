@@ -7,7 +7,7 @@ Challenge the two sides playing Flappy Bird! Written in HTML and JS, powered by 
 <img src="screenshot.png"></img>
 
 ## The goal
-The goal is to reproduce a different concept of the original Flappy bird game which challenges two team: "Free" and "Proprietary".
+The goal is to reproduce a different concept of the original Flappy bird game which challenges two teams: "Free" and "Proprietary".
 
 ### Available characters and columns
 The game allows you to change your character and the columns (the blocks that kills you when you hit them).
