@@ -46,7 +46,8 @@ var mainState = {
         game.load.image('blinky', 'assets/characters/blinky.png');
         game.load.image('puffy', 'assets/characters/puffy.png');
         game.load.image('xue', 'assets/characters/xue.png');
-
+	game.load.image('duke', 'assets/characters/duke.png');
+	game.load.image('xutyo', 'assets/characters/xutyo.png');
 
         // Load Columns
         game.load.image('column', 'assets/columns/column.png');
@@ -57,11 +58,14 @@ var mainState = {
         game.load.image('fb', 'assets/columns/fb.png');
         game.load.image('aws', 'assets/columns/aws.png');
         game.load.image('nolok', 'assets/columns/nolok.png');
+	game.load.image('osi', 'assets/columns/osi.png');
         game.load.image('bin', 'assets/columns/bin.png');
         game.load.image('clippy', 'assets/columns/clippy.png');
         game.load.image('java', 'assets/columns/java.png');
         game.load.image('chromy', 'assets/columns/chromy.png');
         game.load.image('phone', 'assets/columns/phone.png');
+	game.load.image('prime', 'assets/columns/prime.png');
+
         // Load the jump sound
         game.load.audio('jump', 'assets/audio/jump.wav');
 
