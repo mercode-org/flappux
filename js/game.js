@@ -167,7 +167,7 @@ var mainState = {
     },
 
     addOnePipe: function (x, y) {
-        var column = game.add.sprite(x, y, 'aws'); // IMPORTANT: THIS CHANGES THE COLUMN SHAPE
+        var column = game.add.sprite(x, y, 'apple'); // IMPORTANT: THIS CHANGES THE COLUMN SHAPE
         this.columns.add(column);
         game.physics.arcade.enable(column);
 
