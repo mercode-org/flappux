@@ -14,7 +14,7 @@ The game allows you to change your character and the columns (the blocks that ki
 
 | Team Free | Team Proprietary |
 | --------------- | --------------- |
-| Beastie | Apple |
+| Beastie <img width=500/>| Apple <img width=500/>|
 | Freedo | DRM |
 | Tux | Nolok |
 | GNU | Win |
@@ -63,29 +63,31 @@ npm start
 ```
 
 
-#### webkit2-launcher ( GNU/Linux only )
+#### webkit2-launcher (GNU/Linux only)
 
 ##### 1. Install Nix
-
 Install Nix package manager in order to proceed. If you have NixOS or a Nix based GNU/Linux distro, you can skip that.
+
 ```
 curl https://nixos.org/nix/install | sh
 ```
 
-##### 2. Add MerOS channels and update.
-
+##### 2. Add MerOS channels and update
 Add MerOS channels amond Nix channels and update. You can skip that if you use MerOS.
+
 ```
 echo "https://nix.mercode.org/dev/meros meros" >> $HOME/.nix-channels
 nix-channel --update -vv
 ```
 
-##### 3. Install [webkit2-installer](https://github.com/mercode-org/webkit2-launcher).
+##### 3. Install [webkit2-installer](https://github.com/mercode-org/webkit2-launcher)
+
 ```
 nix-env -iA meros.webkit2-launcher
 ```
 
-##### 5. Start the app. 
+##### 4. Start the app
+
 ```
 webkit2-launcher .
 ```
