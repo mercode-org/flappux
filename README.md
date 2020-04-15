@@ -48,13 +48,19 @@ If you already have git installed on your computer, you can clone the repository
 git clone https://github.com/ardacebi/flappux
 ```
 
-If you don't have git installed or don't want it, you can download the repository as a .zip file from the green download button at the very above.
+If you don't have git installed or don't want it, you can [download the repository as a .zip file](https://github.com/ardacebi/flappux/archive/master.zip) from the green download button at the very above.
 
 #### 2. Locate index.html
-After cloning or download the repository, navigate to the downloaded folder and locate the index.html file and double click on it. This will launch the game on your browser.
+After cloning or downloading the repository, navigate to the downloaded folder and locate the index.html file and double click on it. This will launch the game on your browser.
 
 ## Contributing
-All contributions are welcome. To-do's and known bugs are logged as issues in this repository. You can contribute with your changes by creating a fork of the repository and opening a pull request.
+All contributions are welcome. To-do's and known bugs are logged as [issues](https://github.com/ardacebi/flappux/issues) in this repository. You can contribute with your changes by creating a fork of the repository and opening a pull request.
+
+---
+
+<img src="helpwanted.png"></img>
+
+You can contribute to all logged issues, but the ones that need urgent attention and help from outsiders are marked with the [help wanted](https://github.com/ardacebi/flappux/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag.
 
 ## Contributors
 
