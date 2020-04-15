@@ -36,7 +36,6 @@ var mainState = {
         // Load Characters
         game.load.image('player', 'assets/characters/player.png');
         game.load.image('player+', 'assets/characters/player+.png');
-
         game.load.image('beastie', 'assets/characters/beastie.png');
         game.load.image('freedo', 'assets/characters/freedo.png');
         game.load.image('tux', 'assets/characters/tux.png');
@@ -46,27 +45,26 @@ var mainState = {
         game.load.image('blinky', 'assets/characters/blinky.png');
         game.load.image('puffy', 'assets/characters/puffy.png');
         game.load.image('xue', 'assets/characters/xue.png');
-	game.load.image('duke', 'assets/characters/duke.png');
-	game.load.image('xutyo', 'assets/characters/xutyo.png');
-	game.load.image('bugzilla', 'assets/characters/buggie.png');
+        game.load.image('duke', 'assets/characters/duke.png');
+        game.load.image('xutyo', 'assets/characters/xutyo.png');
+        game.load.image('bugzilla', 'assets/characters/buggie.png');
 
         // Load Columns
         game.load.image('column', 'assets/columns/column.png');
-
         game.load.image('apple', 'assets/columns/apple.png');
         game.load.image('drm', 'assets/columns/drm.png');
         game.load.image('win', 'assets/columns/win.png');
         game.load.image('fb', 'assets/columns/fb.png');
         game.load.image('aws', 'assets/columns/aws.png');
         game.load.image('nolok', 'assets/columns/nolok.png');
-	game.load.image('osi', 'assets/columns/osi.png');
+        game.load.image('osi', 'assets/columns/osi.png');
         game.load.image('bin', 'assets/columns/bin.png');
         game.load.image('clippy', 'assets/columns/clippy.png');
         game.load.image('java', 'assets/columns/java.png');
         game.load.image('chromy', 'assets/columns/chromy.png');
         game.load.image('phone', 'assets/columns/phone.png');
-	game.load.image('prime', 'assets/columns/prime.png');
-	game.load.image('ms', 'assets/columns/ms.png');
+        game.load.image('prime', 'assets/columns/prime.png');
+        game.load.image('ms', 'assets/columns/ms.png');
         game.load.image('bug', 'assets/columns/bug.png');
 
         // Load the jump sound
