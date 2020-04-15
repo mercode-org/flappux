@@ -34,34 +34,34 @@ var mainState = {
         game.stage.backgroundColor = '#71c5cf';
 
         // Load Characters
-	game.load.image('player', 'assets/characters/player.png');
+        game.load.image('player', 'assets/characters/player.png');
         game.load.image('player+', 'assets/characters/player+.png');
 
         game.load.image('beastie', 'assets/characters/beastie.png');
         game.load.image('freedo', 'assets/characters/freedo.png');
         game.load.image('tux', 'assets/characters/tux.png');
         game.load.image('gnu', 'assets/characters/gnu.png');
-	game.load.image('pidgin', 'assets/characters/pidgin.png');
+        game.load.image('pidgin', 'assets/characters/pidgin.png');
         game.load.image('hexley', 'assets/characters/hexley.png');
         game.load.image('blinky', 'assets/characters/blinky.png');
         game.load.image('puffy', 'assets/characters/puffy.png');
-	game.load.image('xue', 'assets/characters/xue.png');
+        game.load.image('xue', 'assets/characters/xue.png');
 
 
         // Load Columns
-        game.load.image('column', 'assets/columns/column.png');   
+        game.load.image('column', 'assets/columns/column.png');
 
-	game.load.image('apple', 'assets/columns/apple.png');
+        game.load.image('apple', 'assets/columns/apple.png');
         game.load.image('drm', 'assets/columns/drm.png');
         game.load.image('win', 'assets/columns/win.png');
         game.load.image('fb', 'assets/columns/fb.png');
-	game.load.image('aws', 'assets/columns/aws.png');
-	game.load.image('nolok', 'assets/columns/nolok.png');
-	game.load.image('bin', 'assets/columns/bin.png');
-	game.load.image('clippy', 'assets/columns/clippy.png');
-	game.load.image('java', 'assets/columns/java.png');
-        game.load.image('chromy', 'assets/columns/chromy.png');   
-        game.load.image('phone', 'assets/columns/phone.png');   
+        game.load.image('aws', 'assets/columns/aws.png');
+        game.load.image('nolok', 'assets/columns/nolok.png');
+        game.load.image('bin', 'assets/columns/bin.png');
+        game.load.image('clippy', 'assets/columns/clippy.png');
+        game.load.image('java', 'assets/columns/java.png');
+        game.load.image('chromy', 'assets/columns/chromy.png');
+        game.load.image('phone', 'assets/columns/phone.png');
         // Load the jump sound
         game.load.audio('jump', 'assets/audio/jump.wav');
 
@@ -106,13 +106,13 @@ var mainState = {
     update: function () {
         if (this.bird.y < 0 || this.bird.y > game.world.height) {
             if (this.bird.alive == true) {
-               this.deadSound = game.add.audio('dead');
-               this.deadSound.volume = 0.2;
-               this.deadSound.play();
-	    }
-	    this.restartGame(); 
+                this.deadSound = game.add.audio('dead');
+                this.deadSound.volume = 0.2;
+                this.deadSound.play();
+            }
+            this.restartGame();
         }
-	
+
 
         game.physics.arcade.overlap(this.bird, this.columns, this.hitPipe, null, this);
 
