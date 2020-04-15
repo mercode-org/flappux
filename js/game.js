@@ -3,8 +3,8 @@ var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, "
 var newStyle = document.createElement('style');
 newStyle.appendChild(document.createTextNode("\
 @font-face {\
-    font-family: 'ScoreFont';\
-    src: url('./fonts/ScoreFont.ttf') format('truetype');\
+    font-family: 'ka1';\
+    src: url('./fonts/ka1.ttf') format('truetype');\
   }\
 "));
 
@@ -34,19 +34,34 @@ var mainState = {
         game.stage.backgroundColor = '#71c5cf';
 
         // Load Characters
+	game.load.image('player', 'assets/characters/player.png');
+        game.load.image('player+', 'assets/characters/player+.png');
+
         game.load.image('beastie', 'assets/characters/beastie.png');
         game.load.image('freedo', 'assets/characters/freedo.png');
         game.load.image('tux', 'assets/characters/tux.png');
         game.load.image('gnu', 'assets/characters/gnu.png');
 	game.load.image('pidgin', 'assets/characters/pidgin.png');
+        game.load.image('hexley', 'assets/characters/hexley.png');
+        game.load.image('blinky', 'assets/characters/blinky.png');
+        game.load.image('puffy', 'assets/characters/puffy.png');
+	game.load.image('xue', 'assets/characters/xue.png');
+
 
         // Load Columns
-        game.load.image('apple', 'assets/columns/apple.png');
+        game.load.image('column', 'assets/columns/column.png');   
+
+	game.load.image('apple', 'assets/columns/apple.png');
         game.load.image('drm', 'assets/columns/drm.png');
         game.load.image('win', 'assets/columns/win.png');
         game.load.image('fb', 'assets/columns/fb.png');
 	game.load.image('aws', 'assets/columns/aws.png');
-
+	game.load.image('nolok', 'assets/columns/nolok.png');
+	game.load.image('bin', 'assets/columns/bin.png');
+	game.load.image('clippy', 'assets/columns/clippy.png');
+	game.load.image('java', 'assets/columns/java.png');
+        game.load.image('chromy', 'assets/columns/chromy.png');   
+        game.load.image('phone', 'assets/columns/phone.png');   
         // Load the jump sound
         game.load.audio('jump', 'assets/audio/jump.wav');
 
@@ -81,7 +96,7 @@ var mainState = {
         game.input.onDown.add(this.jump, this);
 
         this.score = 0;
-        this.labelScore = game.add.text(20, 20, "0", { font: "45px ScoreFont", fill: "#ffffff" });
+        this.labelScore = game.add.text(20, 20, "0", { font: "45px ka1", fill: "#ffffff" });
 
         // Add the jump sound
         this.jumpSound = game.add.audio('jump');
