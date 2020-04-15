@@ -12,9 +12,9 @@ The goal is to reproduce a different concept of the original Flappy bird game wh
 ### Available characters and columns
 The game allows you to change your character and the columns (the blocks that kills you when you hit them).
 
-| Team Free | Team Proprietary |
+| Team Free <img width=500/>| Team Proprietary <img width=500/>|
 | --------------- | --------------- |
-| Beastie <img width=500/>| Apple <img width=500/>|
+| Beastie | Apple |
 | Freedo | DRM |
 | Tux | Nolok |
 | GNU | Win |
