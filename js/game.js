@@ -45,17 +45,11 @@ var mainState = {
         game.load.image('blinky', 'assets/characters/blinky.png');
         game.load.image('puffy', 'assets/characters/puffy.png');
         game.load.image('xue', 'assets/characters/xue.png');
-<<<<<<< HEAD
-	game.load.image('duke', 'assets/characters/duke.png');
-	game.load.image('xutyo', 'assets/characters/xutyo.png');
-	game.load.image('buggie', 'assets/characters/buggie.png');
-	game.load.image('maciej', 'assets/characters/maciej.png');
-	    
-=======
-        game.load.image('duke', 'assets/characters/duke.png');
-        game.load.image('xutyo', 'assets/characters/xutyo.png');
+	    game.load.image('duke', 'assets/characters/duke.png');
+	    game.load.image('xutyo', 'assets/characters/xutyo.png');
+	    game.load.image('buggie', 'assets/characters/buggie.png');
+	    game.load.image('maciej', 'assets/characters/maciej.png');
         game.load.image('bugzilla', 'assets/characters/buggie.png');
->>>>>>> ed9c27693b58af60fa40d9208380eb2244f5f924
 
         // Load Columns
         game.load.image('column', 'assets/columns/column.png');
