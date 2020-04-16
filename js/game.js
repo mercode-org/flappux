@@ -48,7 +48,9 @@ var mainState = {
         game.load.image('xue', 'assets/characters/xue.png');
 	game.load.image('duke', 'assets/characters/duke.png');
 	game.load.image('xutyo', 'assets/characters/xutyo.png');
-	game.load.image('bugzilla', 'assets/characters/buggie.png');
+	game.load.image('buggie', 'assets/characters/buggie.png');
+	game.load.image('maciej', 'assets/characters/maciej.png');
+	    
 
         // Load Columns
         game.load.image('column', 'assets/columns/column.png');
@@ -68,6 +70,13 @@ var mainState = {
 	game.load.image('prime', 'assets/columns/prime.png');
 	game.load.image('ms', 'assets/columns/ms.png');
         game.load.image('bug', 'assets/columns/bug.png');
+	game.load.image('bsd', 'assets/columns/bsd.png');
+	game.load.image('linux', 'assets/columns/linux.png');
+	game.load.image('abode', 'assets/columns/abode.png');
+	game.load.image('rar', 'assets/columns/rar.png');
+	game.load.image('mark', 'assets/columns/mark.png');
+        game.load.image('ink', 'assets/columns/ink.png');
+
 
         // Load the jump sound
         game.load.audio('jump', 'assets/audio/jump.wav');
@@ -91,7 +100,7 @@ var mainState = {
         this.columns = game.add.group();
         this.timer = game.time.events.loop(1500, this.addRowOfPipes, this);
 
-        this.bird = game.add.sprite(100, 245, 'bugzilla'); // IMPORTANT: THIS CHANGES THE BIRD SHAPE
+        this.bird = game.add.sprite(100, 245, 'tux'); // IMPORTANT: THIS CHANGES THE BIRD SHAPE
         game.physics.arcade.enable(this.bird);
         this.bird.body.gravity.y = 1000;
 
@@ -174,7 +183,7 @@ var mainState = {
     },
 
     addOnePipe: function (x, y) {
-        var column = game.add.sprite(x, y, 'bug'); // IMPORTANT: THIS CHANGES THE COLUMN SHAPE
+        var column = game.add.sprite(x, y, 'bsd'); // IMPORTANT: THIS CHANGES THE COLUMN SHAPE
         this.columns.add(column);
         game.physics.arcade.enable(column);
 
