@@ -14,21 +14,21 @@ The game allows you to change your character and the columns (the blocks that ki
 
 | Team Free <img width=500/>| Team Proprietary <img width=500/>|
 | --------------- | --------------- |
-| Beastie | Apple |
-| Freedo | DRM |
-| Tux | Nolok |
-| GNU | Win |
-| Pidgin | AWS |
-| Hexley | Nolok |
-| Blinky | MS |
-| Puffy | Clippy |
-| Xue | Java |
-| Buggie | Bug |
-| Duke | Java |
-|  | Chromy |
-|  | Phone |
-|  | MS |
-|  | Prime |
+| <img width=20 height=20 src="/assets/characters/beastie.png"/> Beastie | <img width=20 height=20 src="/assets/columns/apple.png"/> Apple |
+| <img width=20 height=20 src="/assets/characters/freedo.png"/> Freedo | <img width=20 height=20 src="/assets/columns/drm.png"/> DRM |
+| <img width=20 height=20 src="/assets/characters/tux.png"/> Tux | <img width=20 height=20 src="/assets/columns/nolok.png"/> Nolok |
+| <img width=20 height=20 src="/assets/characters/gnu.png"/> GNU | <img width=20 height=20 src="/assets/columns/win.png"/> Win |
+| <img width=20 height=20 src="/assets/characters/pidgin.png"/> Pidgin | <img width=20 height=20 src="/assets/columns/aws.png"/> AWS |
+| <img width=20 height=20 src="/assets/characters/hexley.png"/> Hexley | <img width=20 height=20 src="/assets/columns/nolok.png"/> Nolok |
+| <img width=20 height=20 src="/assets/characters/blinky.png"/> Blinky | <img width=20 height=20 src="/assets/columns/ms.png"/> MS |
+| <img width=20 height=20 src="/assets/characters/puffy.png"/> Puffy | <img width=20 height=20 src="/assets/columns/clippy.png"/> Clippy |
+| <img width=20 height=20 src="/assets/characters/xue.png"/> Xue | <img width=20 height=20 src="/assets/columns/java.png"/> Java |
+| <img width=20 height=20 src="/assets/characters/buggie.png"/> Buggie | <img width=20 height=20 src="/assets/columns/bug.png"/> Bug |
+| <img width=20 height=20 src="/assets/characters/duke.png"/> Duke | <img width=20 height=20 src="/assets/columns/java.png"/> Java |
+|  | <img width=20 height=20 src="/assets/columns/chromy.png"/> Chromy |
+|  | <img width=20 height=20 src="/assets/columns/phone.png"/> Phone |
+|  | <img width=20 height=20 src="/assets/columns/ms.png"/> MS |
+|  | <img width=20 height=20 src="/assets/columns/prime.png"/> Prime |
 
 ## Building
 The main aim is to have a desktop app for macOS, Windows and Linux for easier gameplay and access. Though, if you want to play the game from your browser, it's possible to do so. Below you can find the two main methods to build and play the game.
