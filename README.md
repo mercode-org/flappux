@@ -7,12 +7,12 @@ Challenge the two sides playing Flappy Bird! Written in HTML and JS, powered by 
 <img src="screenshot.png"></img>
 
 ## The goal
-The goal is to reproduce a different concept of the original Flappy bird game which challenges two teams: "Free" and "Proprietary".
+The goal is to reproduce a different concept of the original Flappy bird game which challenges two sides that you choose.
 
 ### Available characters and columns
 The game allows you to change your character and the columns (the blocks that kills you when you hit them).
 
-| Team Free <img width=500/>| Team Proprietary <img width=500/>|
+| Characters <img width=500/>| Columns <img width=500/>|
 | --------------- | --------------- |
 | <img width=20 height=20 src="/assets/characters/beastie.png"/> Beastie | <img width=20 height=20 src="/assets/columns/apple.png"/> Apple |
 | <img width=20 height=20 src="/assets/characters/freedo.png"/> Freedo | <img width=20 height=20 src="/assets/columns/drm.png"/> DRM |
@@ -27,7 +27,6 @@ The game allows you to change your character and the columns (the blocks that ki
 | <img width=20 height=20 src="/assets/characters/duke.png"/> Duke | <img width=20 height=20 src="/assets/columns/java.png"/> Java |
 |  | <img width=20 height=20 src="/assets/columns/chromy.png"/> Chromy |
 |  | <img width=20 height=20 src="/assets/columns/phone.png"/> Phone |
-|  | <img width=20 height=20 src="/assets/columns/ms.png"/> MS |
 |  | <img width=20 height=20 src="/assets/columns/prime.png"/> Prime |
 
 ## Building
