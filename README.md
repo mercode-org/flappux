@@ -25,14 +25,13 @@ The game allows you to change your character and the columns (the blocks that ki
 | <img width=20 height=20 src="/assets/characters/xue.png"/> Xue | <img width=20 height=20 src="/assets/columns/java.png"/> Java |
 | <img width=20 height=20 src="/assets/characters/buggie.png"/> Buggie | <img width=20 height=20 src="/assets/columns/bug.png"/> Bug |
 | <img width=20 height=20 src="/assets/characters/duke.png"/> Duke | <img width=20 height=20 src="/assets/columns/java.png"/> Java |
-| <img width=20 height=20 src="/assets/characters/maciej.png"/> Maciej | <img width=20 height=20 src="/assets/columns/chromy.png"/> Chromy |
+|  | <img width=20 height=20 src="/assets/columns/chromy.png"/> Chromy |
 |  | <img width=20 height=20 src="/assets/columns/phone.png"/> Phone |
 |  | <img width=20 height=20 src="/assets/columns/prime.png"/> Prime |
 |  | <img width=20 height=20 src="/assets/columns/abode.png"/> Abode |
 |  | <img width=20 height=20 src="/assets/columns/bsd.png"/> BSD |
 |  | <img width=20 height=20 src="/assets/columns/ink.png"/> Ink |
 |  | <img width=20 height=20 src="/assets/columns/linux.png"/> Linux |
-|  | <img width=20 height=20 src="/assets/columns/mark.png"/> Mark |
 |  | <img width=20 height=20 src="/assets/columns/osi.png"/> Osi |
 |  | <img width=20 height=20 src="/assets/columns/rar.png"/> RAR |
 
