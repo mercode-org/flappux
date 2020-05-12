@@ -9,8 +9,9 @@
     "pack:darwin": "electron-packager . Flappux --out=dist --platform=darwin --arch=x64 --icon=assets/icons/icon.icns && cd dist && zip -r Flappux-darwin-x64.zip Flappux-darwin-x64 && cd ../",
     "pack:win32": "electron-packager . Flappux --out=dist --platform=win32 --arch=ia32 --icon=assets/icons/icon.ico && cd dist && zip -r Flappux-win32-ia32.zip Flappux-win32-ia32 && cd ../",
     "pack:win64": "electron-packager . Flappux --out=dist --platform=win32 --arch=x64 --icon=assets/icons/icon.ico && cd dist && zip -r Flappux-win32-x64.zip Flappux-win32-x64 && cd ../",
-    "pack:linux": "electron-packager . Flappux --out=dist --platform=linux --arch=x64 --icon=assets/icons/icon.png && cd dist && zip -r Flappux-linux-x64.zip Flappux-linux-x64 && cd ../",
-    "build": "npm run pack:darwin && npm run pack:win32 && npm run pack:win64 && npm run pack:linux",
+    "pack:linux64": "electron-packager . Flappux --out=dist --platform=linux --arch=x64 --icon=assets/icons/icon.png && cd dist && zip -r Flappux-linux-x64.zip Flappux-linux-x64 && cd ../",
+    "pack:linux32": "electron-packager . Flappux --out=dist --platform=linux --arch=ia32 --icon=assets/icons/icon.png && cd dist && zip -r Flappux-linux-ia32.zip Flappux-linux-ia32 && cd ../",
+    "build": "npm run pack:darwin && npm run pack:win32 && npm run pack:win64 && npm run pack:linux64 && npm run pack:linux32",
     "nixstart": "nix run nixpkgs.electron_6 -c electron .",
     "test": "return 0"
   },
