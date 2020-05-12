@@ -5,11 +5,12 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build-all": "electron-packager . --all --out=dist Flappux",
-    "build-darwin": "electron-packager . --out=dist/darwin --platform=darwin --arch=x64 Flappux && cp Icon.icns dist/darwin/Flappux-darwin-x64/Flappux.app/Contents/Resources/atom.icns",
-    "build-win-32": "electron-packager . --out=dist/win --platform=win32 --arch=ia32 Flappux",
-    "build-win-64": "electron-packager . --out=dist/win --platform=win32 --arch=x64 Flappux",
-    "build-linux": "electron-packager .  --out=dist/linux --platform=linux --arch=x64 Flappux",
+    "build-all": "electron-packager . Flappux --all --out=dist",
+    "pack:darwin": "electron-packager . Flappux --out=dist --platform=darwin --arch=x64 --icon=assets/icons/icon.icns && cd dist && zip -r Flappux-darwin-x64.zip Flappux-darwin-x64 && cd ../",
+    "pack:win32": "electron-packager . Flappux --out=dist --platform=win32 --arch=ia32 --icon=assets/icons/icon.ico && cd dist && zip -r Flappux-win32-ia32.zip Flappux-win32-ia32 && cd ../",
+    "pack:win64": "electron-packager . Flappux --out=dist --platform=win32 --arch=x64 --icon=assets/icons/icon.ico && cd dist && zip -r Flappux-win32-x64.zip Flappux-win32-x64 && cd ../",
+    "pack:linux": "electron-packager . Flappux --out=dist --platform=linux --arch=x64 --icon=assets/icons/icon.png && cd dist && zip -r Flappux-linux-x64.zip Flappux-linux-x64 && cd ../",
+    "build": "npm run pack:darwin && npm run pack:win32 && npm run pack:win64 && npm run pack:linux",
     "nixstart": "nix run nixpkgs.electron_6 -c electron .",
     "test": "return 0"
   },
