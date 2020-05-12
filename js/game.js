@@ -45,10 +45,10 @@ var mainState = {
         game.load.image('blinky', 'assets/characters/blinky.png');
         game.load.image('puffy', 'assets/characters/puffy.png');
         game.load.image('xue', 'assets/characters/xue.png');
-	    game.load.image('duke', 'assets/characters/duke.png');
-	    game.load.image('xutyo', 'assets/characters/xutyo.png');
-	    game.load.image('buggie', 'assets/characters/buggie.png');
-	    game.load.image('maciej', 'assets/characters/maciej.png');
+        game.load.image('duke', 'assets/characters/duke.png');
+        game.load.image('xutyo', 'assets/characters/xutyo.png');
+        game.load.image('buggie', 'assets/characters/buggie.png');
+        game.load.image('maciej', 'assets/characters/maciej.png');
         game.load.image('bugzilla', 'assets/characters/buggie.png');
 
         // Load Columns
@@ -68,11 +68,11 @@ var mainState = {
         game.load.image('prime', 'assets/columns/prime.png');
         game.load.image('ms', 'assets/columns/ms.png');
         game.load.image('bug', 'assets/columns/bug.png');
-	game.load.image('bsd', 'assets/columns/bsd.png');
-	game.load.image('linux', 'assets/columns/linux.png');
-	game.load.image('abode', 'assets/columns/abode.png');
-	game.load.image('rar', 'assets/columns/rar.png');
-	game.load.image('mark', 'assets/columns/mark.png');
+        game.load.image('bsd', 'assets/columns/bsd.png');
+        game.load.image('linux', 'assets/columns/linux.png');
+        game.load.image('abode', 'assets/columns/abode.png');
+        game.load.image('rar', 'assets/columns/rar.png');
+        game.load.image('mark', 'assets/columns/mark.png');
         game.load.image('ink', 'assets/columns/ink.png');
 
 
@@ -110,7 +110,10 @@ var mainState = {
         game.input.onDown.add(this.jump, this);
 
         this.score = 0;
-        this.labelScore = game.add.text(20, 20, "0", { font: "45px ka1", fill: "#ffffff" });
+        this.labelScore = game.add.text(20, 20, "0", {
+            font: "45px ka1",
+            fill: "#ffffff"
+        });
 
         // Add the jump sound
         this.jumpSound = game.add.audio('jump');
@@ -145,7 +148,9 @@ var mainState = {
         this.bird.body.velocity.y = -350;
 
         // Jump animation
-        game.add.tween(this.bird).to({ angle: -20 }, 100).start();
+        game.add.tween(this.bird).to({
+            angle: -20
+        }, 100).start();
 
         // Play sound
         this.jumpSound.play();
