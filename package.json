@@ -1,7 +1,7 @@
 {
   "name": "Flappux",
-  "version": "1.0.0",
-  "description": "Challenge the two sides.",
+  "version": "1.1.0",
+  "description": "Flappy bird game based on free/proprietary soft. characters",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
