@@ -2,7 +2,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-Challenge the two sides playing Flappy Bird! Written in HTML and JS, powered by Electron.
+HTML based clone of Flappy Birds that is unapologetically free software.
 
 <img src="screenshot.png"></img>
 
