@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/ardacebi/flappux#readme",
   "devDependencies": {
-    "electron": "^9.4.0",
+    "electron": "^11.5.0",
     "electron-packager": "^14.2.1"
   },
   "launcher": {
